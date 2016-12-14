@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head>
+  <meta charset="utf-8">
+  <title>What's The Weather?</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="mainCtrl"><!-- should i comment this ng-controller out???? -->
+  <div class="wrapper">
+
+
+  <header>
+    <div class="main-icon">
+      <p class="logo"><span class="ww-logo">W<span class="lonely-w">W</span></span>  WEATHER WATCHER</p>
+    </div>
+    <nav>
+      <a ui-sref="today"  ng-class="navClass('today')">Today</a>
+      <a ui-sref="forecast"  ng-class="navClass('forecast')">Forecast</a>
+      <a ui-sref="activities"  ng-class="navClass('activities')">Activites</a>
+    </nav>
+  </header>
+  <!-- <div class="line"></div> -->
+
+  <footer></footer>
+    <ui-view></ui-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="./app.js"></script>
+    <script src="./moment.js"></script>
+    <script src="./mainCtrl.js"></script>
+    <script src="./service.js"></script>
+    <script src="./today/todayCtrl.js"></script>
+    <script src="./forecast/forecastCtrl.js"></script>
+    <script src="./activities/activitiesCtrl.js"></script>
+
+  </div>
+  </body>
+  </html>

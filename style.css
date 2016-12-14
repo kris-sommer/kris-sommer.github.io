@@ -1,0 +1,352 @@
+@import 'https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Open+Sans:400,700,800';
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://hd.unsplash.com/photo-1463114680351-75863cab5bf3");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+header {
+  border-bottom: solid #FCB34B 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.logo {
+  font-size: 18px;
+  color: #4D4E4E;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.logo .ww-logo {
+  letter-spacing: -34px;
+  font-size: 45px;
+}
+
+.logo .lonely-w {
+  color :#DE611B;
+  padding-right: 30px;
+}
+
+.main-icon {
+  background-color: transparent;
+  display: inline-block;
+}
+
+.rain-watch {
+  height: 100px;
+  width: 25%;
+  position:relative;
+}
+
+.main-icon p {
+  align-content: center;
+  margin: 0;
+}
+
+nav {
+  display: inline;
+  font-size: 1.5em;
+  padding-top: 15px;
+  float: right;
+  word-spacing: 36px;
+}
+
+nav a {
+  color: #4D4E4E;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+nav a:hover,
+nav a.active {
+  text-decoration: none;
+  border-bottom: 3px solid #DE611B;
+  padding-bottom: 2px;
+}
+
+.line {
+  width: 100%;
+  height: 150px;
+  color: blue;
+
+}
+
+.zip-input {
+  width: 230px;
+  height: 35px;
+  background-color: #E6E6E6;
+  color: #666662;
+  font-size: 15px;
+  padding-left: 10px;
+
+}
+
+.go-button {
+  height: 35px;
+  width: 120px;
+  background-color: #DE611B;
+  border-radius: 4px;
+}
+
+.go-button {
+  color: white;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+/*/TODAY*************************************************/
+.result-box {
+  /* height: 270px; */
+  width: 488px;
+  /*flex-direction: row;*/
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border: 1px solid #979797;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  border-radius: 8px 8px 8px 8px;
+  padding: 40px;
+  margin-top: 100px;
+}
+
+.middle-part {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;*/
+}
+
+.zip-package {
+  margin-right: auto;
+  margin-left: auto;
+  /* border: solid; */
+  align-content: center;
+  /* padding-left: 50px; */
+  display: inline-block;
+}
+
+
+.image-box {
+  width: 50px;
+  /*border: solid;*/
+  display: inline-block;
+  position: relative;
+}
+
+.image-box img {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: -36px;
+  left: 0px;
+}
+
+.today-result-box {
+  font-size: 15px;
+}
+
+.result-location {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  /* border: solid; */
+  display: inline-block;
+  color: #4D4E4E;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  position: relative;
+  top: 5px;
+}
+
+.result-temperature {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  /* border: solid; */
+  color: #4D4E4E;
+  display: inline-block;
+  /* padding-left: 50px; */
+}
+.result-temperature p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+/*FORECAST********************************************************************/
+.forecast-box {
+  width: 800px;
+  background-color: #FFFFFF;
+}
+
+.top-section {
+  padding-left: 25px;
+}
+
+
+
+
+.each-day-holder {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.forecast-box {
+  max-width: 700px;
+  /* border:solid; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #979797;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  border-radius: 8px 8px 8px 8px;
+  padding: 40px;
+  margin-top: 100px;
+}
+
+.day {
+  width: 20%;
+  height: 100%;
+  padding-left: 25px;
+  text align: center;
+  /*border: solid;*/
+}
+
+.day1 {
+  background-color: transparent;
+}
+
+.day2 {
+  background-color: transparent;
+}
+
+.day3 {
+  background-color: transparent;
+}
+
+.day4 {
+  background-color: transparent;
+}
+
+.day5 {
+  background-color: transparent;
+}
+.date {
+  background-color: #E6E6E6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+.high {
+  color: #4D4E4E;
+}
+
+.low {
+  color: #A0A7A7;
+}
+
+
+/*ACTIVITIES***********************************************************************/
+.activity-box {
+  /*display: flex;
+  flex-direction: column;;
+  justify-content: space-around;*/
+  margin-top: 100px;
+}
+
+.season-box {
+  border: solid;
+  background-color: #FFFFFF;
+  color: #4D4E4E;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  /* margin-top: 100px; */
+  margin-bottom: 40px;
+  border: 1px solid #979797;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  border-radius: 8px 8px 8px 8px;
+  padding: 40px;
+}
+
+.sizer {
+  margin-left: 40px;
+}
+
+.season-text {
+  padding-left: 60px;
+  float: left;
+  width: 70%;
+}
+.season-logo {
+  font-size: 40px;
+  float: left;
+  width: 30%;
+}
+
+.spring-logo {
+  color: #88DE1B;
+
+}
+
+.spring {
+  padding-left: 60px;
+}
+
+.summer-logo {
+  color: #DED21B;
+
+}
+
+.summer {
+  padding-left: 32px;
+}
+
+.autumn-logo {
+  color: #DE611B;
+
+}
+
+.autumn {
+  padding-left: 33px;
+}
+
+.winter-logo {
+  color: #1BA0DE;
+
+}
+
+.winter {
+  padding-left: 55px;
+}

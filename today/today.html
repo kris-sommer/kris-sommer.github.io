@@ -1,0 +1,38 @@
+
+<section class="result-box">
+  <div class="zip-package">
+  <input type="text" class="zip-input" ng-model="zip" placeholder="Zip Code"></input>
+
+  <button class="go-button" ng-click="getWeather(zip)">Search</button>
+
+  </div>
+  <!-- <div class="holder-box"> -->
+
+    <div class="today-result-box">
+      <div class="middle-part">
+        <p class="result-location">{{cityData.location.city}}, {{cityData.location.region}}</p>
+        <div class="image-box">
+          <img ng-src="http://l.yimg.com/a/i/us/we/52/{{weather.code}}.gif ">
+        </div>
+      </div>
+        <div class="result-temperature">
+        <p>{{weather.text}}</p>
+        <p>High: {{weather.high}}°</p>
+        <p>Low: {{weather.low}}%</p>
+      </div>
+    </div>
+  <!-- </div> -->
+</section>
+
+
+<!-- {{weather}} -->
+<!-- {{weather.name}}
+
+"coord":{"lon":-111.66,"lat":40.23},
+"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],
+"base":"stations","main":{"temp":58.08,"pressure":822.77,"humidity":47,"temp_min":58.08,"temp_max":58.08,"sea_level":1032.94,"grnd_level":822.77},
+"wind":{"speed":1.59,"deg":144.007},"clouds":{"all":12},"dt":1475950892,"sys":{"message":0.1599,"country":"US","sunrise":1475933486,"sunset":1475974528},"id":5780026,"name":"Provo","cod":200}
+
+{{weather.main.temp}}
+
+{{weather.weather[0].main}} -->

@@ -1,0 +1,40 @@
+
+
+<!-- {{forecastWeather}} -->
+<!-- {{forecastWeather.city.name}}
+{{forecastWeather.country.name}} -->
+<!-- {{forecastData.city.name}} -->
+<!-- <div ng-repeat="forecast in forecastWeather|filter: forecastData"></div> -->
+<!-- {{forecastWeather[0].main.humidity}}
+{{forecastWeather[1].main.humidity}}
+{{forecastWeather[2].main.humidity}}
+{{forecastWeather[3].main.humidity}}
+{{forecastWeather[4].main.humidity}} -->
+
+
+
+
+<!-- http://l.yimg.com/a/i/us/we/52/9.gif -->
+
+<div class="forecast-box">
+  <div class="top-section">
+    <input type="text" class="zip-input" ng-model="zip" placeholder="Zip"></input>
+
+    <button class="go-button" ng-click="getWeather(zip)">Search</button>
+    <p class="result-location">{{cityData.location.city}}, {{cityData.location.region}}</p>
+  </div>
+
+  
+  <div>
+  <div class="each-day-holder">
+    <div class="day" ng-repeat="day in forecastWeather">
+      <p class="date">{{day.date}}</p>
+      <div class="image-box">
+        <img ng-src="http://l.yimg.com/a/i/us/we/52/{{day.code}}.gif ">
+      </div>
+      <p class="text">{{day.text}}</p>
+      <p class="high">{{day.high}}°</p>
+      <p class="low">{{day.low}}°</p>
+    </div>
+  </div>
+</div>
